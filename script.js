@@ -17,16 +17,13 @@ function convertToRoman(num) {
 
   //your code here
 	let romannum="";
-
     for (let i=0;i<arr.length;i++) {
         while (num>=arr[i][1]) {
-            romanNumeral += arr[i][0];
+            romannum+=arr[i][0];
             num-=arr[i][1];
         }
     }
-
     return romannum;
-
 }
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
 
